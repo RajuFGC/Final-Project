@@ -9,41 +9,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-[#020916] w-[1440px]">
-    <main class="h-24 px-16">
-      <nav class="flex justify-between py-6">
+  <body class="flex flex-col justify-center items-center min-h-screen bg-[#020916] px-16 sm:w-[375px] text-9xl bg-slate-500">
+    <main>
+      <nav class="flex justify-between py-6  ">
         <div class="flex">
           <img class="pr-4" src="Union.svg" alt="a svg image" />
           <div class="w-full">
-            <p class="font-DM text-xl text-rajuRed">Raju FGC</p>
-            <p class="text-white font-DM text-xs opacity-40">
+            <p class="font-DM font-bold text-xl text-rajuRed">Raju FGC</p>
+            <p class="text-white font-DM font-bold text-xs opacity-40">
               FRONTEND DEVELOPER
             </p>
           </div>
         </div>
         <div class="flex items-center">
-          <p class="text-white pr-10 font-DM text-base">About</p>
-          <p class="text-white pr-10 font-DM text-base">Skills</p>
-          <p class="text-white pr-10 font-DM text-base">Projects</p>
+          <p class="text-white pr-10 font-DM font-bold text-base">About</p>
+          <p class="text-white pr-10 font-DM text-base font-bold">Skills</p>
+          <p class="text-white pr-10 font-DM text-base font-bold">Projects</p>
           <img class="pr-2" src="Download.svg" alt="arrow down image" />
-          <p class="text-white pr-10 font-DM text-base">Resume</p>
-          <p
-            class="bg-rajuRed text-[#020916] px-8 py-3 rounded-xl font-DM text-base"
+          <p class="text-white pr-10 font-DM text-base font-bold">Resume</p>
+          <button
+            class="bg-rajuRed text-[#020916] px-8 py-3 rounded-xl font-DM text-base font-bold"
           >
             Contact
-          </p>
+          </button>
         </div>
       </nav>
       <header class="flex justify-between py-[120px] h-[699px]">
         <div class="w-[752px] h-[432px]">
           <div>
             <p
-              class="pb-4 font-DM text-[48px] leading-[64px] tracking-[2%] text-white"
+              class="pb-4 font-DM font-bold text-[48px] leading-[64px] tracking-[2%] text-white"
             >
               My name is Maciek and I’m an aspiring
               <span class="text-rajuRed">Frontend developer</span> and<br />
@@ -59,20 +58,20 @@
           </div>
           <div class="flex gap-3">
             <button
-              class="gap-3 py-4 px-8 rounded-[20px] flex bg-rajuRed text-xl font-DM"
+              class="gap-3 py-4 px-8 rounded-[20px] flex items-center bg-rajuRed text-xl leading-9 font-bold font-DM"
             >
               <img src="message-chat-circle 1.svg" alt="chat image" />Get in
               touch
             </button>
             <button
-              class="gap-3 flex rounded-[20px] border-[#1F2937] border-2 py-4 px-8 text-rajuRed text-xl"
+              class="gap-3 flex items-center font-DM font-bold rounded-[20px] border-[#1F2937] border-2 py-4 px-8 text-rajuRed text-xl leading-9"
             >
               <img src="image-user 1.svg" alt="info icon" />Get to know me
             </button>
           </div>
         </div>
         <img
-          class="w-56 rounded-3xl mr-32"
+          class="bg-pink-700 h-[699px]  rounded-3xl"
           src="image0.png"
           alt="profile photo"
         />
@@ -80,41 +79,41 @@
       <section class="py-[120px]">
         <div class="w-[864px]">
           <p class="text-[#9CA3AF] font-DM text-xl pb-4">MY SKILLS</p>
-          <p class="text-white text-[40px] font-DM pb-20">
+          <p class="text-white text-[40px] leading-[48px] tracking-wide font-medium font-DM pb-20">
             I've picked up some cool skills along the way,<br />
             and I'm excited to share them with you.<br />Check out what I can do
             below!
           </p>
         </div>
-        <div class="grid grid-cols-3">
+        <div class="grid grid-cols-3 gap-4">
           <div class="SHADOWBOX2 p-10 w-[426px]">
             <img class="pb-20" src="Frame 299.svg" alt="pyramid image" />
             <div class="text-white">
               <img src="Rectangle 110.svg" alt="red flat line" />
-              <p class="py-3 font-DM text-2xl">Working Knowledge</p>
-              <p class="pb-2 text-sm">— Semantic HTML5</p>
-              <p class="pb-2 text-sm">— Flexbox</p>
-              <p class="pb-2 text-sm">— Markdown</p>
-              <p class="pb-2 text-sm">— JS:Local Storage</p>
-              <p class="pb-2 text-sm">— Figma</p>
-              <p class="pb-2 text-sm">— CSS Grid</p>
-              <p class="pb-2 text-sm">— Forms</p>
-              <p class="pb-2 text-sm">— JS:DOM manipulations</p>
-              <p class="pb-2 text-sm">— SASS</p>
+              <p class="py-3 font-DM text-2xl font-bold">Working Knowledge</p>
+              <p class="pb-2 text-sm font-medium">— Semantic HTML5</p>
+              <p class="pb-2 text-sm font-medium">— Flexbox</p>
+              <p class="pb-2 text-sm font-medium">— Markdown</p>
+              <p class="pb-2 text-sm font-medium">— JS:Local Storage</p>
+              <p class="pb-2 text-sm font-medium">— Figma</p>
+              <p class="pb-2 text-sm font-medium">— CSS Grid</p>
+              <p class="pb-2 text-sm font-medium">— Forms</p>
+              <p class="pb-2 text-sm font-medium">— JS:DOM manipulations</p>
+              <p class="pb-2 text-sm font-medium">— SASS</p>
             </div>
           </div>
           <div class="SHADOWBOX2 p-10 w-[426px]">
             <img class="pb-20" src="circle.svg" alt="circle image" />
             <div class="text-white">
               <img src="Rectangle 110.svg" alt="red flat line" />
-              <p class="py-3 font-DM text-2xl">Know something about</p>
-              <p class="pb-2 text-sm">— JavaScript ES6 + features</p>
-              <p class="pb-2 text-sm">— CSS animations</p>
-              <p class="pb-2 text-sm">— Working with API</p>
-              <p class="pb-2 text-sm">— NPM Scripts</p>
-              <p class="pb-2 text-sm">— PWA</p>
-              <p class="pb-2 text-sm">— Git</p>
-              <p class="pb-2 text-sm">— Accessibility</p>
+              <p class="py-3 font-DM text-2xl font-bold">Know something about</p>
+              <p class="pb-2 text-sm font-medium">— JavaScript ES6 + features</p>
+              <p class="pb-2 text-sm font-medium">— CSS animations</p>
+              <p class="pb-2 text-sm font-medium">— Working with API</p>
+              <p class="pb-2 text-sm font-medium">— NPM Scripts</p>
+              <p class="pb-2 text-sm font-medium">— PWA</p>
+              <p class="pb-2 text-sm font-medium">— Git</p>
+              <p class="pb-2 text-sm font-medium">— Accessibility</p>
             </div>
           </div>
           <div class="SHADOWBOX2 p-10 w-[426px]">
@@ -122,29 +121,29 @@
             <!--SHADOWBOX IS A CLASS IN INDEX.css!!!!!!!!!!!!!!!!!!!!!!-->
             <div class="text-white">
               <img src="Rectangle 110.svg" alt="red flat line" />
-              <p class="py-3 font-DM text-2xl">Working Knowledge</p>
-              <p class="pb-2 text-sm">— React</p>
-              <p class="pb-2 text-sm">— Node</p>
-              <p class="pb-2 text-sm">— Electron</p>
-              <p class="pb-2 text-sm">— SSR</p>
-              <p class="pb-2 text-sm">— TypeScript</p>
-              <p class="pb-2 text-sm">— Gatsby</p>
-              <p class="pb-2 text-sm">— Forms</p>
-              <p class="pb-2 text-sm">— JS:DOM manipulations</p>
-              <p class="pb-2 text-sm">— WebSockets</p>
+              <p class="py-3 font-DM text-2xl font-bold">Working Knowledge</p>
+              <p class="pb-2 text-sm font-medium">— React</p>
+              <p class="pb-2 text-sm font-medium">— Node</p>
+              <p class="pb-2 text-sm font-medium">— Electron</p>
+              <p class="pb-2 text-sm font-medium">— SSR</p>
+              <p class="pb-2 text-sm font-medium">— TypeScript</p>
+              <p class="pb-2 text-sm font-medium">— Gatsby</p>
+              <p class="pb-2 text-sm font-medium">— Forms</p>
+              <p class="pb-2 text-sm font-medium">— JS:DOM manipulations</p>
+              <p class="pb-2 text-sm font-medium">— WebSockets</p>
             </div>
           </div>
         </div>
       </section>
       <section class="py-[120px]">
         <div class="w-[864px]">
-          <p class="text-[#9CA3AF] font-DM text-xl pb-4">Recent Projects</p>
-          <p class="text-white text-[40px] font-DM pb-20">
+          <p class="text-[#9CA3AF] font-DM font-bold text-xl pb-4">Recent Projects</p>
+          <p class="text-white text-[40px] font-medium font-DM pb-20">
             Since diving into frontend development in 2023, I've brought a range
             of projects to life. Here's a snapshot of my accomplishments so far.
           </p>
         </div>
-        <div class="grid grid-cols-2 text-white">
+        <div class="grid grid-cols-2 gap-4 text-white">
           <div class="w-w648">
             <div class="flex rounded-t-[20px] gap-[6px] p-4 MACheader">
               <img
@@ -169,7 +168,7 @@
                   <img class="" src="star-01 1.svg" alt="star icon" />27
                 </p>
               </div>
-              <p class="text-gray-400 font-DM font-medium text-xl">
+              <p class="text-gray-400 font-DM font-normal text-xl">
                 Phasellus dolor. In dui magna, posuere eget, vestibulum et,
                 tempor auctor, justo fringilla mauris sit amet nibh. Suspendisse
                 pulvinar, augue ac venenatis condimentum, sem libero volutpat...
@@ -227,7 +226,7 @@
                     <img class="" src="star-01 1.svg" alt="star icon" />27
                   </p>
                 </div>
-                <p class="text-gray-400 font-DM font-medium text-xl">
+                <p class="text-gray-400 font-DM font-normal text-xl">
                   Phasellus dolor. In dui magna, posuere eget, vestibulum et,
                   tempor auctor, justo fringilla mauris sit amet nibh.
                   Suspendisse pulvinar, augue ac venenatis condimentum, sem
@@ -287,7 +286,7 @@
                     <img class="" src="star-01 1.svg" alt="star icon" />27
                   </p>
                 </div>
-                <p class="text-gray-400 font-DM font-medium text-xl">
+                <p class="text-gray-400 font-DM font-normal text-xl">
                   Phasellus dolor. In dui magna, posuere eget, vestibulum et,
                   tempor auctor, justo fringilla mauris sit amet nibh.
                   Suspendisse pulvinar, augue ac venenatis condimentum, sem
@@ -347,7 +346,7 @@
                     <img class="" src="star-01 1.svg" alt="star icon" />27
                   </p>
                 </div>
-                <p class="text-gray-400 font-DM font-medium text-xl">
+                <p class="text-gray-400 font-DM font-normal text-xl">
                   Phasellus dolor. In dui magna, posuere eget, vestibulum et,
                   tempor auctor, justo fringilla mauris sit amet nibh.
                   Suspendisse pulvinar, augue ac venenatis condimentum, sem
@@ -407,7 +406,7 @@
                     <img class="" src="star-01 1.svg" alt="star icon" />27
                   </p>
                 </div>
-                <p class="text-gray-400 font-DM font-medium text-xl">
+                <p class="text-gray-400 font-DM font-normal text-xl">
                   Phasellus dolor. In dui magna, posuere eget, vestibulum et,
                   tempor auctor, justo fringilla mauris sit amet nibh.
                   Suspendisse pulvinar, augue ac venenatis condimentum, sem
@@ -448,7 +447,7 @@
         <!--AFTER HOURS-->
         <div class="py-[120px]">
           <div class="w-[864px]">
-            <p class="text-[#9CA3AF] font-DM text-xl pb-4">After Hours</p>
+            <p class="text-[#9CA3AF] font-DM font-bold text-xl pb-4">After Hours</p>
             <p class="text-white text-[40px] font-DM pb-20">
               Outside of my regular working hours, I delve into an array of
               activities and passions. Here's a glimpse into how I spend my
