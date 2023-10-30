@@ -1,24 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{html,js,ts,jsx,tsx}",
-  ],
+  content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        smallLaptop: "1440px",
+      },
       colors: {
-        'rajuRed': '#FF4444'
+        rajuRed: "#FF4444",
       },
       fontFamily: {
-        'DM': ['DM Sans', 'sans-serif']
+        DM: ["DM Sans", "sans-serif"],
       },
       width: {
-        'w648':'648px'
+        w648: "648px",
       },
       height: {
-        'h398':'398px'
-    }
+        h398: "398px",
+      },
     },
   },
   plugins: [],
-}
-
+};

@@ -9,13 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="flex flex-col justify-center items-center min-h-screen bg-[#020916] px-16">
-    <main>
-      <nav class="flex justify-between py-6  ">
+  <body
+    class="w-full flex flex-col justify-center items-center bg-[#020916] px-4 sm:px-16"
+  >
+    <main class="max-w-screen-lg w-full">
+      <nav class="flex sm:justify-between items-center py-6">
         <div class="flex">
           <img class="pr-4" src="Union.svg" alt="a svg image" />
           <div class="w-full">
@@ -25,7 +30,7 @@
             </p>
           </div>
         </div>
-        <div class="flex items-center">
+        <div class="hidden sm:flex items-center">
           <p class="text-white pr-10 font-DM font-bold text-base">About</p>
           <p class="text-white pr-10 font-DM text-base font-bold">Skills</p>
           <p class="text-white pr-10 font-DM text-base font-bold">Projects</p>
@@ -38,17 +43,21 @@
           </button>
         </div>
       </nav>
-      <header class="flex justify-between py-[120px] h-[699px]">
-        <div class="w-[752px] h-[432px]">
-          <div>
+      <header
+        class="w-full flex sm:justify-between flex-col-reverse sm:flex-row py-5 sm:py-[120px] sm:h-[699px]"
+      >
+        <div class="w-full sm:w-[752px] h-[432px]">
+          <div class="max-w-prose">
             <p
-              class="pb-4 font-DM font-bold text-[48px] leading-[64px] tracking-[2%] text-white"
+              class="pb-4 pt-5 font-DM font-bold text-2xl sm:text-[48px] sm:leading-[64px] tracking-[-2%] sm:tracking-[2%] text-white"
             >
-              My name is Maciek and I’m an aspiring
+              My name is Wojtek and I’m an aspiring
               <span class="text-rajuRed">Frontend developer</span> and<br />
-              a keen Star Wars fan.
+              a keen Video games fan.
             </p>
-            <p class="pb-16 font-DM text-2xl text-gray-400">
+            <p
+              class="pb-8 sm:pb-16 font-DM text-base font-medium sm:text-2xl text-gray-400"
+            >
               You might be interested in checking the list of my
               <span class="text-white">skills</span>. Don’t forget to have a
               glimpse at my <span class="text-white">projects</span>. I’m
@@ -56,69 +65,69 @@
               <span class="text-white">contact me</span> 😊
             </p>
           </div>
-          <div class="flex gap-3">
+          <div class="sm:flex sm:gap-3">
             <button
-              class="gap-3 py-4 px-8 rounded-[20px] flex items-center bg-rajuRed text-xl leading-9 font-bold font-DM"
+              class="gap-3 py-2 px-4 sm:py-4 sm:px-8 rounded-2xl sm:rounded-[20px] flex items-center bg-rajuRed text-xl leading-9 font-bold font-DM"
             >
-              <img src="message-chat-circle 1.svg" alt="chat image" />Get in
-              touch
+              <img src="message-chat-circle 1.svg" alt="chat image" /><a href="#contact">Get in
+              touch</a>
             </button>
+            <div class="pt-4"></div>
             <button
-              class="gap-3 flex items-center font-DM font-bold rounded-[20px] border-[#1F2937] border-2 py-4 px-8 text-rajuRed text-xl leading-9"
+              class="gap-3 flex items-center font-DM font-bold rounded-2xl sm:rounded-[20px] border-[#1F2937] border-2 py-2 px-4 sm:py-4 sm:px-8 text-rajuRed text-xl leading-9"
             >
               <img src="image-user 1.svg" alt="info icon" />Get to know me
             </button>
           </div>
         </div>
         <img
-          class="bg-pink-700 h-[699px]  rounded-3xl"
+          class="w-full sm:w-[416px] h-[378px] object-cover rounded-3xl"
           src="image0.png"
           alt="profile photo"
         />
       </header>
-      <section class="py-[120px]">
-        <div class="w-[864px]">
-          <p class="text-[#9CA3AF] font-DM text-xl pb-4">MY SKILLS</p>
-          <p class="text-white text-[40px] leading-[48px] tracking-wide font-medium font-DM pb-20">
+      <section class=" py-14 sm:py-[120px]">
+        <div class=" w-[327px] sm:w-[864px]">
+          <p class="text-[#9CA3AF] font-DM font-bold text-xl pb-4">MY SKILLS</p>
+          <p class="text-white text-2xl sm:text-[40px] sm:leading-[48px] tracking-wide font-medium font-DM pb-10 sm:pb-20">
             I've picked up some cool skills along the way,<br />
             and I'm excited to share them with you.<br />Check out what I can do
             below!
           </p>
         </div>
-        <div class="grid grid-cols-3 gap-4">
-          <div class="SHADOWBOX2 p-10 w-[426px]">
-            <img class="pb-20" src="Frame 299.svg" alt="pyramid image" />
+        <div class="sm:grid sm:grid-cols-3 sm:gap-4 grid grid-cols-1 gap-4 ">
+          <div class="SHADOWBOX2 sm:p-10 p-5   ">
+            <img class="sm:pb-20 pb-10"  src="Frame 299.svg" alt="pyramid image" />
             <div class="text-white">
               <img src="Rectangle 110.svg" alt="red flat line" />
               <p class="py-3 font-DM text-2xl font-bold">Working Knowledge</p>
-              <p class="pb-2 text-sm font-medium">— Semantic HTML5</p>
-              <p class="pb-2 text-sm font-medium">— Flexbox</p>
-              <p class="pb-2 text-sm font-medium">— Markdown</p>
-              <p class="pb-2 text-sm font-medium">— JS:Local Storage</p>
-              <p class="pb-2 text-sm font-medium">— Figma</p>
-              <p class="pb-2 text-sm font-medium">— CSS Grid</p>
-              <p class="pb-2 text-sm font-medium">— Forms</p>
-              <p class="pb-2 text-sm font-medium">— JS:DOM manipulations</p>
-              <p class="pb-2 text-sm font-medium">— SASS</p>
+              <p class="pb-2 font-DM text-sm font-medium">— Semantic HTML5</p>
+              <p class="pb-2 font-DM text-sm font-medium">— Flexbox</p>
+              <p class="pb-2 font-DM text-sm font-medium">— Markdown</p>
+              <p class="pb-2 font-DM text-sm font-medium">— JS:Local Storage</p>
+              <p class="pb-2 font-DM text-sm font-medium">— Figma</p>
+              <p class="pb-2 font-DM text-sm font-medium">— CSS Grid</p>
+              <p class="pb-2 font-DM text-sm font-medium">— Forms</p>
+              <p class="pb-2 font-DM text-sm font-medium">— JS:DOM manipulations</p>
+              <p class="pb-2 font-DM text-sm font-medium">— SASS</p>
             </div>
           </div>
-          <div class="SHADOWBOX2 p-10 w-[426px]">
-            <img class="pb-20" src="circle.svg" alt="circle image" />
+          <div class="SHADOWBOX2 sm:p-10 p-5 ">
+            <img class="sm:pb-20 pb-10" src="circle.svg" alt="circle image" />
             <div class="text-white">
               <img src="Rectangle 110.svg" alt="red flat line" />
               <p class="py-3 font-DM text-2xl font-bold">Know something about</p>
-              <p class="pb-2 text-sm font-medium">— JavaScript ES6 + features</p>
-              <p class="pb-2 text-sm font-medium">— CSS animations</p>
-              <p class="pb-2 text-sm font-medium">— Working with API</p>
-              <p class="pb-2 text-sm font-medium">— NPM Scripts</p>
-              <p class="pb-2 text-sm font-medium">— PWA</p>
-              <p class="pb-2 text-sm font-medium">— Git</p>
-              <p class="pb-2 text-sm font-medium">— Accessibility</p>
+              <p class="pb-2 font-DM text-sm font-medium">— JavaScript ES6 + features</p>
+              <p class="pb-2 font-DM text-sm font-medium">— CSS animations</p>
+              <p class="pb-2 font-DM text-sm font-medium">— Working with API</p>
+              <p class="pb-2 font-DM text-sm font-medium">— NPM Scripts</p>
+              <p class="pb-2 font-DM text-sm font-medium">— PWA</p>
+              <p class="pb-2 font-DM text-sm font-medium">— Git</p>
+              <p class="pb-2 font-DM text-sm font-medium">— Accessibility</p>
             </div>
           </div>
-          <div class="SHADOWBOX2 p-10 w-[426px]">
-            <img class="pb-20" src="sqaure.svg" alt="square image" />
-            <!--SHADOWBOX IS A CLASS IN INDEX.css!!!!!!!!!!!!!!!!!!!!!!-->
+          <div class="SHADOWBOX2 sm:p-10 p-5 ">
+            <img class="sm:pb-20 pb-10" src="sqaure.svg" alt="square image" />
             <div class="text-white">
               <img src="Rectangle 110.svg" alt="red flat line" />
               <p class="py-3 font-DM text-2xl font-bold">Working Knowledge</p>
@@ -134,17 +143,17 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="py-[120px]">
-        <div class="w-[864px]">
-          <p class="text-[#9CA3AF] font-DM font-bold text-xl pb-4">Recent Projects</p>
-          <p class="text-white text-[40px] font-medium font-DM pb-20">
+      </section> 
+      <section class="py-14 sm:py-[120px]">
+        <div class="sm:max-w-3xl">
+          <p class="text-[#9CA3AF] font-DM font-bold text-xl pb-4">RECENT PROJECTS</p>
+          <p class="text-white text-2xl sm:text-[40px] sm:leading-[48px] font-medium font-DM pb-10 sm:pb-20">
             Since diving into frontend development in 2023, I've brought a range
             of projects to life. Here's a snapshot of my accomplishments so far.
           </p>
         </div>
-        <div class="grid grid-cols-2 gap-4 text-white">
-          <div class="w-w648">
+        <div class="sm:grid sm:grid-cols-2 grid grid-cols-1 gap-4 text-white">
+          <div class="">
             <div class="flex rounded-t-[20px] gap-[6px] p-4 MACheader">
               <img
                 src="span.project__circle.svg"
@@ -159,7 +168,7 @@
                 alt="left top corner circles in MacOS windows"
               />
             </div>
-            <div class="p-10 SHADOWBOX">
+            <div class=" p-5 sm:p-10 SHADOWBOX">
               <div class="flex gap-4 items-center pb-4">
                 <p class="text-white font-DM text-2xl font-bold">
                   simple-editor
@@ -168,10 +177,8 @@
                   <img class="" src="star-01 1.svg" alt="star icon" />27
                 </p>
               </div>
-              <p class="text-gray-400 font-DM font-normal text-xl">
-                Phasellus dolor. In dui magna, posuere eget, vestibulum et,
-                tempor auctor, justo fringilla mauris sit amet nibh. Suspendisse
-                pulvinar, augue ac venenatis condimentum, sem libero volutpat...
+              <p class="text-gray-400 font-DM font-normal text-xl pb-4">
+              This simple-editor checks the amount of letters in the textarea and depending on the number of them it changes their color accordingly from black to blue, red and green. It can also save the content of the textarea and after refreshing the site the user can load its content back to the textarea.
               </p>
               <div
                 class="flex gap-4 font-DM font-bold text-sm text-white pb-10"
@@ -181,28 +188,115 @@
                 <p class="bck bck rounded py-1 px-2">TypeScript</p>
                 <p class="bck rounded py-1 px-2">React</p>
               </div>
-              <div class="flex gap-4">
+              <div class="sm:flex gap-4">
+                <button class="flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"><img src="box.svg" alt="button box icon img" />
+                  <a href="https://t-editor.netlify.app/" target="_blank" rel="noopener noreferrer">View demo</a>
+                </button>
+                <div class="pb-4"></div>
+                <button class="flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"><img src="github.svg" alt="githyb icon" />
+                  <a href="https://github.com/RajuFGC/Teditor" target="_blank" rel="noopener noreferrer">Source code</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="">
+              <div class="flex rounded-t-[20px] gap-[6px] p-4 MACheader">
+                <img
+                  src="span.project__circle.svg"
+                  alt="left top corner circles in MacOS windows"
+                />
+                <img
+                  src="span.project__circle.svg"
+                  alt="left top corner circles in MacOS windows"
+                />
+                <img
+                  src="span.project__circle.svg"
+                  alt="left top corner circles in MacOS windows"
+                />
+              </div>
+              <div class=" p-5 sm:p-10 SHADOWBOX">
+                <div class="flex gap-4 items-center pb-4">
+                  <p class="text-white font-DM text-2xl font-bold">
+                    Hydrapp
+                  </p>
+                  <p class="flex bck rounded py-1 px-2 gap-[2px]">
+                    <img  src="star-01 1.svg" alt="star icon" />27
+                  </p>
+                </div>
+                <p class="text-gray-400 font-DM font-normal text-xl pb-4">
+                 Hydrapp uses PWA technology so the user can either open it in its browser or install it on a desktop or any smart device. It is used for counting the number of glasses a person has drunk during the day. 
+                </p>
                 <div
-                  class="flex gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937]"
+                  class="flex gap-4 font-DM font-bold text-sm text-white pb-10"
                 >
-                  <img src="box.svg" alt="button box icon img" />
-                  <button class="text-rajuRed font-DM text-xl font-bold">
-                    View demo
+                  <p class="bck rouned py-1 px-2">CSS</p>
+                  <p class="bck rounded py-1 px-2">HTML</p>
+                  <p class="bck bck rounded py-1 px-2">TypeScript</p>
+                  <p class="bck rounded py-1 px-2">React</p>
+                </div>
+                <div class="sm:flex gap-4">
+                  <button class="flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"><img src="box.svg" alt="button box icon img" />
+                    <a href="https://rajuhydrapp.netlify.app/" target="_blank" rel="noopener noreferrer">View demo</a>
+                  </button>
+                  <div class="pb-4"></div>
+                  <button class="flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"><img src="github.svg" alt="githyb icon" />
+                    <a href="https://github.com/RajuFGC/Hydrapp" target="_blank" rel="noopener noreferrer">Source code</a>
                   </button>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="">
+              <div class="flex rounded-t-[20px] gap-[6px] p-4 MACheader">
+                <img
+                  src="span.project__circle.svg"
+                  alt="left top corner circles in MacOS windows"
+                />
+                <img
+                  src="span.project__circle.svg"
+                  alt="left top corner circles in MacOS windows"
+                />
+                <img
+                  src="span.project__circle.svg"
+                  alt="left top corner circles in MacOS windows"
+                />
+              </div>
+              <div class=" p-5 sm:p-10 SHADOWBOX">
+                <div class="flex gap-4 items-center pb-4">
+                  <p class="text-white font-DM text-2xl font-bold">
+                    businness-card
+                  </p>
+                  <p class="flex bck rounded py-1 px-2 gap-[2px]">
+                    <img class="" src="star-01 1.svg" alt="star icon" />27
+                  </p>
+                </div>
+                <p class="text-gray-400 font-DM font-normal text-xl pb-4">
+                As the name suggests a simple card which contains a short description of the services I provide.
+                </p>
                 <div
-                  class="flex gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937]"
+                  class="flex gap-4 font-DM font-bold text-sm text-white pb-10"
                 >
-                  <img src="github.svg" alt="githyb icon" />
-                  <button class="text-rajuRed font-DM text-xl font-bold">
-                    Source code
+                  <p class="bck rouned py-1 px-2">CSS</p>
+                  <p class="bck rounded py-1 px-2">HTML</p>
+                  <p class="bck bck rounded py-1 px-2">TypeScript</p>
+                  <p class="bck rounded py-1 px-2">React</p>
+                </div>
+                <div class="sm:flex gap-4">
+                  <button class="flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"><img src="box.svg" alt="button box icon img" />
+                    <a href="https://gtrcard.netlify.app/" target="_blank" rel="noopener noreferrer">View demo</a>
+                  </button>
+                  <div class="pb-4"></div>
+                  <button class="flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"><img src="github.svg" alt="githyb icon" />
+                    <a href="https://github.com/RajuFGC/My-business-card" target="_blank" rel="noopener noreferrer">Source code</a>
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="w-w648">
-            <div class="w-w648">
+          <div class="">
+            <div class="">
               <div class="flex rounded-t-[20px] gap-[6px] p-4 MACheader">
                 <img
                   src="span.project__circle.svg"
@@ -217,20 +311,17 @@
                   alt="left top corner circles in MacOS windows"
                 />
               </div>
-              <div class="p-10 SHADOWBOX">
+              <div class=" p-5 sm:p-10 SHADOWBOX">
                 <div class="flex gap-4 items-center pb-4">
                   <p class="text-white font-DM text-2xl font-bold">
-                    simple-editor
+                    Homepage
                   </p>
                   <p class="flex bck rounded py-1 px-2 gap-[2px]">
                     <img class="" src="star-01 1.svg" alt="star icon" />27
                   </p>
                 </div>
-                <p class="text-gray-400 font-DM font-normal text-xl">
-                  Phasellus dolor. In dui magna, posuere eget, vestibulum et,
-                  tempor auctor, justo fringilla mauris sit amet nibh.
-                  Suspendisse pulvinar, augue ac venenatis condimentum, sem
-                  libero volutpat...
+                <p class="text-gray-400 font-DM font-normal text-xl pb-4">
+                 When I started to learn about HTML, CSS and Java Script this was the first project I started to test and practice with. Basically, it's a playground and it will stay that way.
                 </p>
                 <div
                   class="flex gap-4 font-DM font-bold text-sm text-white pb-10"
@@ -240,29 +331,20 @@
                   <p class="bck bck rounded py-1 px-2">TypeScript</p>
                   <p class="bck rounded py-1 px-2">React</p>
                 </div>
-                <div class="flex gap-4">
-                  <div
-                    class="flex gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937]"
-                  >
-                    <img src="box.svg" alt="button box icon img" />
-                    <button class="text-rajuRed font-DM text-xl font-bold">
-                      View demo
-                    </button>
-                  </div>
-                  <div
-                    class="flex gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937]"
-                  >
-                    <img src="github.svg" alt="githyb icon" />
-                    <button class="text-rajuRed font-DM text-xl font-bold">
-                      Source code
-                    </button>
-                  </div>
+                <div class="sm:flex gap-4">
+                  <button class="flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"><img src="box.svg" alt="button box icon img" />
+                    <a href="https://rajutestsite.netlify.app/#up" target="_blank" rel="noopener noreferrer">View demo</a>
+                  </button>
+                  <div class="pb-4"></div>
+                  <button class="flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"><img src="github.svg" alt="githyb icon" />
+                    <a href="https://github.com/RajuFGC/Homepage" target="_blank" rel="noopener noreferrer">Source code</a>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="w-w648">
-            <div class="w-w648">
+          <div class="">
+            <div class="">
               <div class="flex rounded-t-[20px] gap-[6px] p-4 MACheader">
                 <img
                   src="span.project__circle.svg"
@@ -277,20 +359,17 @@
                   alt="left top corner circles in MacOS windows"
                 />
               </div>
-              <div class="p-10 SHADOWBOX">
+              <div class=" p-5 sm:p-10 SHADOWBOX">
                 <div class="flex gap-4 items-center pb-4">
                   <p class="text-white font-DM text-2xl font-bold">
-                    simple-editor
+                    CV
                   </p>
                   <p class="flex bck rounded py-1 px-2 gap-[2px]">
                     <img class="" src="star-01 1.svg" alt="star icon" />27
                   </p>
                 </div>
-                <p class="text-gray-400 font-DM font-normal text-xl">
-                  Phasellus dolor. In dui magna, posuere eget, vestibulum et,
-                  tempor auctor, justo fringilla mauris sit amet nibh.
-                  Suspendisse pulvinar, augue ac venenatis condimentum, sem
-                  libero volutpat...
+                <p class="text-gray-400 font-DM font-normal text-xl pb-4">
+                This is a "Final Project" site which shows all the knowledge that I've gained so far and used it to create it. I will probably spend some more time tweaking and reiterating it as the time goes on. 
                 </p>
                 <div
                   class="flex gap-4 font-DM font-bold text-sm text-white pb-10"
@@ -300,172 +379,41 @@
                   <p class="bck bck rounded py-1 px-2">TypeScript</p>
                   <p class="bck rounded py-1 px-2">React</p>
                 </div>
-                <div class="flex gap-4">
-                  <div
-                    class="flex gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937]"
-                  >
-                    <img src="box.svg" alt="button box icon img" />
-                    <button class="text-rajuRed font-DM text-xl font-bold">
-                      View demo
-                    </button>
-                  </div>
-                  <div
-                    class="flex gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937]"
-                  >
-                    <img src="github.svg" alt="githyb icon" />
-                    <button class="text-rajuRed font-DM text-xl font-bold">
-                      Source code
-                    </button>
-                  </div>
+                <div class="sm:flex gap-4">
+                  <button class="flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"><img src="box.svg" alt="button box icon img" />
+                    <a href="https://raju-final-prpject.netlify.app/" target="_blank" rel="noopener noreferrer">View demo</a>
+                  </button>
+                  <div class="pb-4"></div>
+                  <button class="flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"><img src="github.svg" alt="githyb icon" />
+                    <a href="https://github.com/RajuFGC/Final-Project" target="_blank" rel="noopener noreferrer">Source code</a>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="w-w648">
-            <div class="w-w648">
-              <div class="flex rounded-t-[20px] gap-[6px] p-4 MACheader">
-                <img
-                  src="span.project__circle.svg"
-                  alt="left top corner circles in MacOS windows"
-                />
-                <img
-                  src="span.project__circle.svg"
-                  alt="left top corner circles in MacOS windows"
-                />
-                <img
-                  src="span.project__circle.svg"
-                  alt="left top corner circles in MacOS windows"
-                />
-              </div>
-              <div class="p-10 SHADOWBOX">
-                <div class="flex gap-4 items-center pb-4">
-                  <p class="text-white font-DM text-2xl font-bold">
-                    simple-editor
-                  </p>
-                  <p class="flex bck rounded py-1 px-2 gap-[2px]">
-                    <img class="" src="star-01 1.svg" alt="star icon" />27
-                  </p>
-                </div>
-                <p class="text-gray-400 font-DM font-normal text-xl">
-                  Phasellus dolor. In dui magna, posuere eget, vestibulum et,
-                  tempor auctor, justo fringilla mauris sit amet nibh.
-                  Suspendisse pulvinar, augue ac venenatis condimentum, sem
-                  libero volutpat...
-                </p>
-                <div
-                  class="flex gap-4 font-DM font-bold text-sm text-white pb-10"
-                >
-                  <p class="bck rouned py-1 px-2">CSS</p>
-                  <p class="bck rounded py-1 px-2">HTML</p>
-                  <p class="bck bck rounded py-1 px-2">TypeScript</p>
-                  <p class="bck rounded py-1 px-2">React</p>
-                </div>
-                <div class="flex gap-4">
-                  <div
-                    class="flex gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937]"
-                  >
-                    <img src="box.svg" alt="button box icon img" />
-                    <button class="text-rajuRed font-DM text-xl font-bold">
-                      View demo
-                    </button>
-                  </div>
-                  <div
-                    class="flex gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937]"
-                  >
-                    <img src="github.svg" alt="githyb icon" />
-                    <button class="text-rajuRed font-DM text-xl font-bold">
-                      Source code
-                    </button>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="w-w648">
-            <div class="w-w648">
-              <div class="flex rounded-t-[20px] gap-[6px] p-4 MACheader">
-                <img
-                  src="span.project__circle.svg"
-                  alt="left top corner circles in MacOS windows"
-                />
-                <img
-                  src="span.project__circle.svg"
-                  alt="left top corner circles in MacOS windows"
-                />
-                <img
-                  src="span.project__circle.svg"
-                  alt="left top corner circles in MacOS windows"
-                />
-              </div>
-              <div class="p-10 SHADOWBOX">
-                <div class="flex gap-4 items-center pb-4">
-                  <p class="text-white font-DM text-2xl font-bold">
-                    simple-editor
-                  </p>
-                  <p class="flex bck rounded py-1 px-2 gap-[2px]">
-                    <img class="" src="star-01 1.svg" alt="star icon" />27
-                  </p>
-                </div>
-                <p class="text-gray-400 font-DM font-normal text-xl">
-                  Phasellus dolor. In dui magna, posuere eget, vestibulum et,
-                  tempor auctor, justo fringilla mauris sit amet nibh.
-                  Suspendisse pulvinar, augue ac venenatis condimentum, sem
-                  libero volutpat...
-                </p>
-                <div
-                  class="flex gap-4 font-DM font-bold text-sm text-white pb-10"
-                >
-                  <p class="bck rouned py-1 px-2">CSS</p>
-                  <p class="bck rounded py-1 px-2">HTML</p>
-                  <p class="bck bck rounded py-1 px-2">TypeScript</p>
-                  <p class="bck rounded py-1 px-2">React</p>
-                </div>
-                <div class="flex gap-4">
-                  <div
-                    class="flex gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937]"
-                  >
-                    <img src="box.svg" alt="button box icon img" />
-                    <button class="text-rajuRed font-DM text-xl font-bold">
-                      View demo
-                    </button>
-                  </div>
-                  <div
-                    class="flex gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937]"
-                  >
-                    <img src="github.svg" alt="githyb icon" />
-                    <button class="text-rajuRed font-DM text-xl font-bold">
-                      Source code
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
       <section>
-        <!--AFTER HOURS-->
-        <div class="py-[120px]">
-          <div class="w-[864px]">
-            <p class="text-[#9CA3AF] font-DM font-bold text-xl pb-4">After Hours</p>
-            <p class="text-white text-[40px] font-DM pb-20">
+        <div class="sm:py-[120px]">
+          <div class="sm:w-[864px]">
+            <p class="text-[#9CA3AF] font-DM font-bold text-xl pb-4 pt-14">After Hours</p>
+            <p class="text-white text-2xl font-DM font-medium pb-10 sm:pb-20">
               Outside of my regular working hours, I delve into an array of
               activities and passions. Here's a glimpse into how I spend my
               after-hours.
             </p>
           </div>
-          <div class="w-[1312px] grid grid-cols-4 gap-4">
-            <!--GRIDO-->
-            <div class="w-[262px]">
+          <div class="grid grid-cols-1 sm:grid sm:grid-cols-4 sm:gap-4">
+            <div class="">
               <img
-                class="w-[262px] h-[480px] rounded-[20px]"
+                class=" rounded-[20px]"
                 src="Biker.svg"
                 alt="Picture of my bike"
               />
-              <p class="font-DM font-bold text-white text-2xl pt-6 pb-1">
+              <p class="font-DM font-bold text-white text-2xl sm:pt-[105px]  pt-6 pb-1">
                 Bike riding
               </p>
-              <p class="font-DM font-medium text-gray-400 text-base">
+              <p class="font-DM font-medium text-gray-400 text-base  pb-14">
                 I usually can't wait for the spring<br />
                 to come cause then it's time get<br />
                 on my bike and feel the thrill of speed!!!!! Nothing clears
@@ -473,47 +421,47 @@
                 mind like a good joy ride with other bikers.
               </p>
             </div>
-            <div class="w-[262px]">
+            <div class="">
               <img
-                class="w-[262px] h-[349px] rounded-[20px]"
+                class="rounded-[20px]"
                 src="CornBuildingUSA.svg"
                 alt="Picture of me at Chicgao river"
               />
-              <p class="font-DM font-bold text-white text-2xl pt-[155px] pb-1">
+              <p class="font-DM font-bold text-white text-2xl pt-6 sm:pt-[227px] pb-1">
                 Travelling
               </p>
-              <p class="font-DM font-medium text-gray-400 text-base">
+              <p class="font-DM font-medium pb-14 text-gray-400 text-base">
                 Visting different countries and getting to know various cultures
                 was always my passion, therefore whenever I have time and means
                 to do it I simply travel.
               </p>
             </div>
-            <div class="w-[262px]">
+            <div class="">
               <img
-                class="w-[236px] h-[350px] rounded-[20px]"
+                class=" rounded-[20px]"
                 src="Figures 1.svg"
                 alt="Picture of acrion figures"
               />
-              <p class="font-DM font-bold text-white text-2xl pt-[153px] pb-1">
+              <p class="font-DM font-bold text-white text-2xl pt-6 sm:pt-[187px] pb-1">
                 Figure Collecting/Gaming
               </p>
-              <p class="font-DM font-medium text-gray-400 text-base">
+              <p class="font-DM font-medium pb-14 text-gray-400 text-base">
                 Ever since I got my first computer Amiga 500 I knew playing
                 video games was going to be a big part of my life. And in order
                 to remember all those fond memories an action figure is always
                 there to remind you how much fun you had.
               </p>
             </div>
-            <div class="w-[262px]">
+            <div class="w-">
               <img
-                class="w-[223px] h-[480px] rounded-[20px]"
+                class=" rounded-[20px]"
                 src="Samurai 1.svg"
-                alt="Picture of my bike"
+                alt="Picture of Samurai"
               />
               <p class="font-DM font-bold text-white text-2xl pt-6 pb-1">
                 Anime
               </p>
-              <p class="font-DM font-medium text-gray-400 text-base">
+              <p class="font-DM font-medium pb-14 text-gray-400 text-base">
                 Did I mention I like travelling? As it happens Japan plays a big
                 role in my life. I always loved watching anime aspecially series
                 that envolve Samurai sword fights.
@@ -522,31 +470,32 @@
           </div>
         </div>
       </section>
-      <!--LETS ORK TOGETHER-->
-      <section>
-        <div class="py-[120px]">
+      LETS ORK TOGETHER
+      <section> 
+        <div class="sm:py-[120px] py-14">
           <div class="flex flex-col items-center justify-center">
-            <p class="text-white font-DM font-bold text-[40px] pb-4">
+            <p class="text-white font-DM font-bold text-4xl sm:text-[40px] pb-4">
               Let's work together
             </p>
-            <p class="font-DM font font-medium text-gray-400 text-2xl">
+            <p class="font-DM font font-medium text-gray-400 text-lg sm:text-2xl">
               I’m open for new opportunitie.
-              <p class="pb-10 font-DM font font-medium text-gray-400 text-2xl"> If you have one for me we should</p>
+              <p class="pb-10 font-DM font font-medium text-gray-400 text-lg sm:text-2xl"> If you have one for me we should</p>
               talk!
             </p>
-            <button class=" gap-3 font-DM font-bold text-xl text-black text flex items-center justify-center rounded-[20px] px-8 py-[14px]   bg-rajuRed"><img class="" src="mailIcon.svg" alt=" mail icon">    gtrwojciechmajeski@gmail.com</button>
-            <p class="pt-20  font-DM font-medium text-gray-400 text-2xl pb-6">or find me on </p>
-            <div class="flex gap-4">
-              <img class=" iconBackground p-4" src="githuber.svg" alt="github icon small bottom of the page">
-              <img class=" iconBackground p-4" src="diamond.svg" alt="diamond icon small bottom of the page">
-              <img class=" iconBackground p-4" src="linkedin.svg" alt="linkedIn icon small bottom of the page">
-              <img class=" iconBackground p-4" src="facebook.svg" alt="facebook icon small bottom of the page">
-              <img class=" iconBackground p-4" src="instagram.svg" alt="instagram icon small bottom of the page">
-              <img class=" iconBackground p-4" src="twitter.svg" alt="twitter icon small bottom of the page">
+            <button  class=" gap-3 font-DM font-bold text-xl text-black flex items-center justify-center rounded-[20px] px-8 py-[14px]    bg-rajuRed" href="sdsd"><img  src="mailIcon.svg" alt=" mail icon"><a id="contact" href="mailto:gtrwojciechmajewski@gmail.com?subject=hej Wojtek">gtrwojciechmajewski@gmail.com</a></button>
+            <p class="sm:pt-20 pt-10  font-DM font-medium text-gray-400 text-2xl pb-6">or find me on </p>
+            <div class=" sm:flex gap-4 grid grid-cols-4 ">
+              <img class=" iconBackground p-4" src="bxl-github 1.svg" alt="github icon small bottom of the page">
+              <img class=" iconBackground p-4" src="bxl-codepen 1.svg" alt="diamond icon small bottom of the page">
+              <img class=" iconBackground p-4" src="bxl-linkedin-square 1.svg" alt="linkedIn icon small bottom of the page">
+              <img class=" iconBackground p-4" src="bxl-facebook-circle 1.svg" alt="facebook icon small bottom of the page">
+              <img class=" sm:hidden invisible sm:iconBackground sm:p-4  iconBackground p-4" src="bxl-twitter 1.svg" alt="twitter icon small bottom of the page">
+              <img class="  iconBackground p-4" src="bxl-instagram-alt 1.svg" alt="instagram icon small bottom of the page">
+              <img class="  iconBackground p-4" src="bxl-twitter 1.svg" alt="twitter icon small bottom of the page">
+              <img class=" sm:hidden invisible sm:iconBackground sm:p-4  iconBackground p-4" src="bxl-instagram-alt 1.svg" alt="instagram icon small bottom of the page">
             </div>
           </div>
-        
-          </div>
+        </div>
       </section>
     </main>
   </body>
