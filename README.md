@@ -9,5 +9,6 @@ This is a "Final Project" site which shows all the knowledge that I've gained so
 - `Grid`
 - `CSS`
 - `JavaScript`
+- -`Postman`
 
 Please visit [Final-Project](https://raju-final-project.netlify.app/)
