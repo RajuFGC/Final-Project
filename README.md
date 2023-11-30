@@ -10,4 +10,4 @@ This is a "Final Project" site which shows all the knowledge that I've gained so
 - `CSS`
 - `JavaScript`
 
-Please visit [Final-Proect](https://raju-final-project.netlify.app/)
+Please visit [Final-Project](https://raju-final-project.netlify.app/)
