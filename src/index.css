@@ -10,7 +10,6 @@
     rgba(255, 255, 255, 0.1) 0%,
     rgba(255, 255, 255, 0.04) 100.02%
   );
-  backdrop-filter: blur(5px);
 }
 
 .MACheader {
@@ -18,7 +17,6 @@
   border: 1px solid #020916;
   background: #1f2937;
   box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.15) inset;
-  backdrop-filter: blur(5px);
 }
 
 .bck {
@@ -33,7 +31,6 @@
     rgba(255, 255, 255, 0.1) 0%,
     rgba(255, 255, 255, 0.04) 100.02%
   );
-  backdrop-filter: blur(5px);
 }
 
 .iconBackground {

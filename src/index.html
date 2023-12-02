@@ -13,16 +13,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
-      rel="stylesheet"
+      rel="stylesheet">
+      <link rel="icon" href="favicon.ico">
+<meta name="description" content="Frontend portfolio of Wojtek Majewski">
+<meta property="og:tittle" content="Wojciech Majewski - Portfolio">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raju-final-project.netlify.app">
+<meta property="og:image" content="og.png">
+<meta property="og:description" content="Frontend portfolio of Wojtek Majewski">
     />
   </head>
   <body
-    class="w-full flex flex-col justify-center items-center bg-[#020916] px-4 sm:px-16"
+    class=" bg-[#020916] font-DM "
   >
-    <main class="max-w-screen-lg w-full">
-      <nav class="flex sm:justify-between items-center py-6">
+    <main>
+      <nav class="sm:py-6 py-3 px-4 sm:px-16 sticky top-0 bg-bg/50 backdrop-blur-lg">
+        <div class="max-w-raju mx-auto sm:flex sm:gap-4 sm:justify-between items-center">
         <div class="flex">
-          <img class="pr-4" src="Union.svg" alt="a svg image" />
+          <img class="animate-Slowspin mr-4" src="Union.svg" alt="a svg image" />
           <div class="w-full">
             <p class="font-DM font-bold text-xl text-rajuRed">Raju FGC</p>
             <p class="text-white font-DM font-bold text-xs opacity-40">
@@ -34,7 +42,7 @@
           <p
             class="hover:text-opacity-30 duration-300 text-white pr-10 font-DM font-bold text-base"
           >
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </p>
           <p
             class="hover:text-opacity-30 duration-300 text-white pr-10 font-DM text-base font-bold"
@@ -58,30 +66,35 @@
             <a href="#contact">Contact</a>
           </button>
         </div>
+        </div>
       </nav>
-      <header
-        class="w-full flex sm:justify-between flex-col-reverse sm:flex-row py-5 sm:py-[120px] sm:h-[699px]"
-      >
-        <div class="w-full sm:w-[752px] h-[432px]">
-          <div class="max-w-prose">
+   <div class="px-4 sm:px-16">
+      <section class="mx-auto max-w-raju sm:flex sm:flex-row-reverse sm:justify-between sm:gap-12 my-5 sm:my-[120px]"id="about">
+        <picture>
+          <source srcset="./image0.png?as=webp&width=832" type="image/webp">
+          <source srcset="./image0.png?as=webp&width=832" type="image/avif">
+        <img width="416" height="459" class="w-full sm:w-[416px] h-[459px] sm:mt-9 max-w-xs sm:max-w-none  object-cover rounded-3xl"
+        src="image0.png"
+        alt="profile photo"/>
+      </picture>
+      <div class="max-w-3xl">
             <p
-              class="pb-4 pt-5 font-DM font-bold text-2xl sm:text-[48px] sm:leading-[64px] tracking-[-2%] sm:tracking-[2%] text-white"
+              class="mb-4 mt-5 font-DM font-bold text-2xl sm:text-[48px] sm:leading-[64px] tracking-[-2%] sm:tracking-[2%] text-white"
             >
-              My name is Wojtek and I’m an aspiring
+              My name is Wojtek and I'm an aspiring
               <span class="text-rajuRed">Frontend developer</span> and<br />
               a keen Video games fan.
             </p>
             <p
-              class="pb-8 sm:pb-16 font-DM text-base font-medium sm:text-2xl text-gray-400"
+              class="mb-8 sm:mb-16 font-DM text-base font-medium sm:text-2xl text-gray-400"
             >
               You might be interested in checking the list of my
-              <span class="text-white">skills</span>. Don’t forget to have a
+              <span class="text-white">skills</span>. Don't forget to have a
               glimpse at my <span class="text-white">projects</span>. I’m
               looking for a new challenges so if you have one -
               <span class="text-white">contact me</span> 😊
             </p>
-          </div>
-          <div class="sm:flex sm:gap-3">
+          <div class="sm:flex sm:gap-3 sm:flex-wrap">
             <button
               class="gap-3 py-2 px-4 sm:py-4 sm:px-8 rounded-2xl sm:rounded-[20px] flex items-center bg-rajuRed hover:bg-red-300 transition-colors duration-300 text-xl leading-9 font-bold font-DM"
             >
@@ -90,7 +103,7 @@
                 >Get in touch</a
               >
             </button>
-            <div class="pt-4"></div>
+            <div class="mt-4"></div>
             <button
               class="hover:bg-slate-700 transition-colors duration-300 gap-3 flex items-center font-DM font-bold rounded-2xl sm:rounded-[20px] border-[#1F2937] border-2 py-2 px-4 sm:py-4 sm:px-8 text-rajuRed text-xl leading-9"
             >
@@ -98,14 +111,9 @@
             </button>
           </div>
         </div>
-        <img
-          class="w-full sm:w-[416px] h-[390px] sm:mt-9 sm:ml-4 object-cover rounded-3xl"
-          src="image0.png"
-          alt="profile photo"
-        />
-      </header>
-      <section class="py-14 sm:py-[120px]">
-        <div class="w-[327px] sm:w-[864px]">
+      </section>
+      <section class="mx-auto max-w-raju py-14 sm:py-[120px]">
+        <div>
           <p
             id="mySkills"
             class="text-[#9CA3AF] font-DM font-bold text-xl pb-4"
@@ -165,21 +173,19 @@
             <img class="sm:pb-20 pb-10" src="sqaure.svg" alt="square image" />
             <div class="text-white">
               <img src="Rectangle 110.svg" alt="red flat line" />
-              <p class="py-3 font-DM text-2xl font-bold">Working Knowledge</p>
+              <p class="py-3 font-DM text-2xl font-bold">Want to learn</p>
               <p class="pb-2 text-sm font-medium">— React</p>
               <p class="pb-2 text-sm font-medium">— Node</p>
               <p class="pb-2 text-sm font-medium">— Electron</p>
               <p class="pb-2 text-sm font-medium">— SSR</p>
               <p class="pb-2 text-sm font-medium">— TypeScript</p>
               <p class="pb-2 text-sm font-medium">— Gatsby</p>
-              <p class="pb-2 text-sm font-medium">— Forms</p>
-              <p class="pb-2 text-sm font-medium">— JS:DOM manipulations</p>
               <p class="pb-2 text-sm font-medium">— WebSockets</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="py-14 sm:py-[120px]">
+      <section class="mx-auto max-w-raju py-14 sm:py-[120px]"> 
         <div class="sm:max-w-3xl">
           <p
             id="PROJECTS"
@@ -188,358 +194,39 @@
             RECENT PROJECTS
           </p>
           <p
-            class="text-white text-2xl sm:text-[40px] sm:leading-[48px] font-medium font-DM pb-10 sm:pb-20"
+            class="text-white text-2xl sm:text-[40px] sm:leading-[48px]  font-medium font-DM pb-10 sm:pb-20"
           >
             Since diving into frontend development in 2023, I've brought a range
             of projects to life. Here's a snapshot of my accomplishments so far.
           </p>
         </div>
-        <div class="sm:grid sm:grid-cols-2 grid grid-cols-1 gap-4 text-white">
-          <div class="">
-            <div class="flex rounded-t-[20px] gap-[6px] p-4 MACheader">
-              <img
-                src="span.project__circle.svg"
-                alt="left top corner circles in MacOS windows"
-              />
-              <img
-                src="span.project__circle.svg"
-                alt="left top corner circles in MacOS windows"
-              />
-              <img
-                src="span.project__circle.svg"
-                alt="left top corner circles in MacOS windows"
-              />
-            </div>
-            <div class="p-5 sm:p-10 SHADOWBOX sm:h-[470px]">
-              <div class="flex gap-4 items-center pb-4">
-                <p class="text-white font-DM text-2xl font-bold">
-                  simple-editor
-                </p>
-                <p class="flex bck rounded py-1 px-2 gap-[2px]">
-                  <img class="" src="star-01 1.svg" alt="star icon" />27
-                </p>
-              </div>
-              <p class="text-gray-400 font-DM font-normal text-xl pb-4">
-                This simple-editor checks the amount of letters in the textarea
-                and depending on the number of them it changes their color
-                accordingly from black to blue, red and green. It can also save
-                the content of the textarea and after refreshing the site the
-                user can load its content back to the textarea.
-              </p>
-              <div
-                class="flex gap-4 font-DM font-bold text-sm text-white pb-10"
-              >
-                <p class="bck rouned py-1 px-2">CSS</p>
-                <p class="bck rounded py-1 px-2">HTML</p>
-                <p class="bck bck rounded py-1 px-2">TypeScript</p>
-                <p class="bck rounded py-1 px-2">React</p>
-              </div>
-              <div class="sm:flex gap-4">
-                <button
-                  class="hover:bg-slate-700 transition-colors duration-300 flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"
-                >
-                  <img src="box.svg" alt="button box icon img" />
-                  <a
-                    href="https://t-editor.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >View demo</a
-                  >
-                </button>
-                <div class="pb-4"></div>
-                <button
-                  class="hover:bg-slate-700 transition-colors duration-300 flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"
-                >
-                  <img src="github.svg" alt="githyb icon" />
-                  <a
-                    href="https://github.com/RajuFGC/Teditor"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Source code</a
-                  >
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <div class="flex rounded-t-[20px] gap-[6px] p-4 MACheader">
-              <img
-                src="span.project__circle.svg"
-                alt="left top corner circles in MacOS windows"
-              />
-              <img
-                src="span.project__circle.svg"
-                alt="left top corner circles in MacOS windows"
-              />
-              <img
-                src="span.project__circle.svg"
-                alt="left top corner circles in MacOS windows"
-              />
-            </div>
-            <div class="p-5 sm:p-10 SHADOWBOX sm:h-[470px]">
-              <div class="flex gap-4 items-center pb-4">
-                <p class="text-white font-DM text-2xl font-bold">Hydrapp</p>
-                <p class="flex bck rounded py-1 px-2 gap-[2px]">
-                  <img src="star-01 1.svg" alt="star icon" />27
-                </p>
-              </div>
-              <p class="text-gray-400 font-DM font-normal text-xl pb-4">
-                Hydrapp uses PWA technology so the user can either open it in
-                its browser or install it on a desktop or any smart device. It
-                is used for counting the number of glasses a person has drunk
-                during the day.
-              </p>
-              <div
-                class="flex gap-4 font-DM font-bold text-sm text-white pb-10"
-              >
-                <p class="bck rouned py-1 px-2">CSS</p>
-                <p class="bck rounded py-1 px-2">HTML</p>
-                <p class="bck bck rounded py-1 px-2">TypeScript</p>
-                <p class="bck rounded py-1 px-2">React</p>
-              </div>
-              <div class="sm:flex gap-4">
-                <button
-                  class="hover:bg-slate-700 transition-colors duration-300 flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"
-                >
-                  <img src="box.svg" alt="button box icon img" />
-                  <a
-                    href="https://rajuhydrapp.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >View demo</a
-                  >
-                </button>
-                <div class="pb-4"></div>
-                <button
-                  class="hover:bg-slate-700 transition-colors duration-300 flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"
-                >
-                  <img src="github.svg" alt="githyb icon" />
-                  <a
-                    href="https://github.com/RajuFGC/Hydrapp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Source code</a
-                  >
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <div class="">
-              <div class="flex rounded-t-[20px] gap-[6px] p-4 MACheader">
-                <img
-                  src="span.project__circle.svg"
-                  alt="left top corner circles in MacOS windows"
-                />
-                <img
-                  src="span.project__circle.svg"
-                  alt="left top corner circles in MacOS windows"
-                />
-                <img
-                  src="span.project__circle.svg"
-                  alt="left top corner circles in MacOS windows"
-                />
-              </div>
-              <div class="p-5 sm:p-10 SHADOWBOX sm:h-[386px]">
-                <div class="flex gap-4 items-center pb-4">
-                  <p class="text-white font-DM text-2xl font-bold">
-                    businness-card
-                  </p>
-                  <p class="flex bck rounded py-1 px-2 gap-[2px]">
-                    <img class="" src="star-01 1.svg" alt="star icon" />27
-                  </p>
-                </div>
-                <p class="text-gray-400 font-DM font-normal text-xl pb-4">
-                  As the name suggests a simple card which contains a short
-                  description of the services I provide.
-                </p>
-                <div
-                  class="flex gap-4 font-DM font-bold text-sm text-white pb-10"
-                >
-                  <p class="bck rouned py-1 px-2">CSS</p>
-                  <p class="bck rounded py-1 px-2">HTML</p>
-                  <p class="bck bck rounded py-1 px-2">TypeScript</p>
-                  <p class="bck rounded py-1 px-2">React</p>
-                </div>
-                <div class="sm:flex gap-4">
-                  <button
-                    class="hover:bg-slate-700 transition-colors duration-300 flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"
-                  >
-                    <img src="box.svg" alt="button box icon img" />
-                    <a
-                      href="https://gtrcard.netlify.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >View demo</a
-                    >
-                  </button>
-                  <div class="pb-4"></div>
-                  <button
-                    class="hover:bg-slate-700 transition-colors duration-300 flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"
-                  >
-                    <img src="github.svg" alt="githyb icon" />
-                    <a
-                      href="https://github.com/RajuFGC/My-business-card"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Source code</a
-                    >
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <div class="flex rounded-t-[20px] gap-[6px] p-4 MACheader">
-              <img
-                src="span.project__circle.svg"
-                alt="left top corner circles in MacOS windows"
-              />
-              <img
-                src="span.project__circle.svg"
-                alt="left top corner circles in MacOS windows"
-              />
-              <img
-                src="span.project__circle.svg"
-                alt="left top corner circles in MacOS windows"
-              />
-            </div>
-            <div class="p-5 sm:p-10 SHADOWBOX sm:h-[386px]">
-              <div class="flex gap-4 items-center pb-4">
-                <p class="text-white font-DM text-2xl font-bold">Homepage</p>
-                <p class="flex bck rounded py-1 px-2 gap-[2px]">
-                  <img class="" src="star-01 1.svg" alt="star icon" />27
-                </p>
-              </div>
-              <p class="text-gray-400 font-DM font-normal text-xl pb-4">
-                When I started to learn about HTML, CSS and Java Script this was
-                the first project I started to test and practice with.
-                Basically, it's a playground and it will stay that way.
-              </p>
-              <div
-                class="flex gap-4 font-DM font-bold text-sm text-white pb-10"
-              >
-                <p class="bck rouned py-1 px-2">CSS</p>
-                <p class="bck rounded py-1 px-2">HTML</p>
-                <p class="bck bck rounded py-1 px-2">TypeScript</p>
-                <p class="bck rounded py-1 px-2">React</p>
-              </div>
-              <div class="sm:flex gap-4">
-                <button
-                  class="hover:bg-slate-700 transition-colors duration-300 flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"
-                >
-                  <img src="box.svg" alt="button box icon img" />
-                  <a
-                    href="https://rajutestsite.netlify.app/#up"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >View demo</a
-                  >
-                </button>
-                <div class="pb-4"></div>
-                <button
-                  class="hover:bg-slate-700 transition-colors duration-300 flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"
-                >
-                  <img src="github.svg" alt="githybicon" />
-                  <a
-                    href="https://github.com/RajuFGC/Homepage"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Source code</a
-                  >
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="">
-            <div class="">
-              <div class="flex rounded-t-[20px] gap-[6px] p-4 MACheader">
-                <img
-                  src="span.project__circle.svg"
-                  alt="left top corner circles in MacOS windows"
-                />
-                <img
-                  src="span.project__circle.svg"
-                  alt="left top corner circles in MacOS windows"
-                />
-                <img
-                  src="span.project__circle.svg"
-                  alt="left top corner circles in MacOS windows"
-                />
-              </div>
-              <div class="p-5 sm:p-10 SHADOWBOX">
-                <div class="flex gap-4 items-center pb-4">
-                  <p class="text-white font-DM text-2xl font-bold">CV</p>
-                  <p class="flex bck rounded py-1 px-2 gap-[2px]">
-                    <img class="" src="star-01 1.svg" alt="star icon" />27
-                  </p>
-                </div>
-                <p class="text-gray-400 font-DM font-normal text-xl pb-4">
-                  This is a "Final Project" site which shows all the knowledge
-                  that I've gained so far and put it to use. I will probably
-                  spend some more time tweaking and reiterating it as the time
-                  goes on.
-                </p>
-                <div
-                  class="flex gap-4 font-DM font-bold text-sm text-white pb-10"
-                >
-                  <p class="bck rouned py-1 px-2">CSS</p>
-                  <p class="bck rounded py-1 px-2">HTML</p>
-                  <p class="bck bck rounded py-1 px-2">TypeScript</p>
-                  <p class="bck rounded py-1 px-2">React</p>
-                </div>
-                <div class="sm:flex gap-4">
-                  <button
-                    class="hover:bg-slate-700 transition-colors duration-300 flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"
-                  >
-                    <img src="box.svg" alt="button box icon img" />
-                    <a
-                      href="https://raju-final-prpject.netlify.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >View demo</a
-                    >
-                  </button>
-                  <div class="pb-4"></div>
-                  <button
-                    class="hover:bg-slate-700 transition-colors duration-300 flex items-center gap-2 px-5 py-4 bg-[#020916] rounded-xl border border-[#1F2937] text-rajuRed font-DM text-xl font-bold"
-                  >
-                    <img src="github.svg" alt="githyb icon" />
-                    <a
-                      href="https://github.com/RajuFGC/Final-Project"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Source code</a
-                    >
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="sm:grid sm:grid-cols-2 sm:h-full grid grid-cols-1 gap-4 text-white projects--js ">
         </div>
       </section>
-      <section>
+       <section class="mx-auto max-w-raju"> 
         <div class="sm:py-[120px]">
           <div class="sm:w-[864px]">
-            <p class="text-[#9CA3AF] font-DM font-bold text-xl pb-4 pt-14">
+            <p class="text-[#9CA3AF] font-DM font-bold text-xl pb-4 pt-14 uppercase">
               After Hours
             </p>
-            <p class="text-white text-2xl font-DM font-medium pb-10 sm:pb-20">
+            <p class="text-white sm:text-4xl text-2xl font-DM font-medium pb-10 sm:pb-20">
               Outside of my regular working hours, I delve into an array of
               activities and passions. Here's a glimpse into how I spend my
               after-hours.
             </p>
           </div>
           <div class="grid grid-cols-1 sm:grid sm:grid-cols-4 sm:gap-4">
-            <div class="">
-              <img
-                class="rounded-[20px]"
-                src="Biker.svg"
-                alt="Picture of my bike"
-              />
-              <p
-                class="font-DM font-bold text-white text-2xl sm:pt-[105px] pt-6 pb-1"
-              >
+            <article>
+              <picture>
+                <source media="(min-width:1023px)" srcset="bikeNEW.svg?as=webp&width=750&height=750" type="image/webp">
+                <source media="(min-width:1023px)" srcset="bikeNEW.svg?as=webp&width=750&height=750" type="image/avif">
+                <source media="(min-width:1024px)" srcset="bikeNEW.svg?as=webp&width=632" type="image/webp">
+                <source media="(min-width:1024px)" srcset="bikeNEW.svg?as=webp&width=632" type="image/avif">
+                <img width="24" height="24" class="rounded-rajuborderXL w-full"
+                src="bikeNEW.svg"
+                alt="Picture of my bike"/>
+            </picture>
+              <p class="font-DM font-bold text-white text-2xl sm:pt- pt-6 pb-1">
                 Bike riding
               </p>
               <p class="font-DM font-medium text-gray-400 text-base pb-14">
@@ -549,15 +236,19 @@
                 your<br />
                 mind like a good joy ride with other bikers.
               </p>
-            </div>
-            <div class="">
-              <img
-                class="rounded-[20px]"
+            </article>
+            <article>
+              <picture>
+                <source media="(min-width:1023px)" srcset="CornBuildingUSA.svg?as=webp&width=750&height=750" type="image/webp">
+                <source media="(min-width:1023px)" srcset="CornBuildingUSA.svg?as=webp&width=750&height=750" type="image/avif">
+                <source media="(min-width:1024px)" srcset="CornBuildingUSA.svg?as=webp&width=632" type="image/webp">
+                <source media="(min-width:1024px)" srcset="CornBuildingUSA.svg?as=webp&width=632" type="image/avif">
+                <img width="24" height="24" class="rounded-[20px] w-full"
                 src="CornBuildingUSA.svg"
-                alt="Picture of me at Chicgao river"
-              />
+                alt="Picture of me at Chicgao river">
+            </picture>
               <p
-                class="font-DM font-bold text-white text-2xl pt-6 sm:pt-[227px] pb-1"
+                class="font-DM font-bold text-white text-2xl pt-6 sm:pt-[188px] pb-1"
               >
                 Travelling
               </p>
@@ -566,15 +257,20 @@
                 was always my passion, therefore whenever I have time and means
                 to do it I simply travel.
               </p>
-            </div>
-            <div class="">
-              <img
-                class="rounded-[20px]"
-                src="Figures 1.svg"
+            </article>
+            <article>
+              <picture>
+                <source media="(min-width:1023px)" srcset="fuguresNEW.svg?as=webp&width=750&height=750" type="image/webp">
+                <source media="(min-width:1023px)" srcset="fuguresNEW.svg?as=webp&width=750&height=750" type="image/avif">
+                <source media="(min-width:1024px)" srcset="fuguresNEW.svg?as=webp&width=632" type="image/webp">
+                <source media="(min-width:1024px)" srcset="fuguresNEW.svg?as=webp&width=632" type="image/avif">
+                <img width="24" height="24" class="rounded-[20px] w-full"
+                src="fuguresNEW.svg"
                 alt="Picture of acrion figures"
               />
+            </picture>
               <p
-                class="font-DM font-bold text-white text-2xl pt-6 sm:pt-[187px] pb-1"
+                class="font-DM font-bold text-white text-2xl pt-6 sm:pt-[138px] pb-1"
               >
                 Figure Collecting/Gaming
               </p>
@@ -584,14 +280,19 @@
                 to remember all those fond memories an action figure is always
                 there to remind me how much fun I had.
               </p>
-            </div>
-            <div class="w-">
-              <img
-                class="rounded-[20px]"
-                src="Samurai 1.svg"
+            </article>
+            <article>
+              <picture>
+                <source media="(min-width:1023px)" srcset="samuraiNEW.svg?as=webp&width=750&height=750" type="image/webp">
+                <source media="(min-width:1023px)" srcset="samuraiNEW.svg?as=webp&width=750&height=750" type="image/avif">
+                <source media="(min-width:1024px)" srcset="samuraiNEW.svg?as=webp&width=632" type="image/webp">
+                <source media="(min-width:1024px)" srcset="samuraiNEW.svg?as=webp&width=632" type="image/avif">
+                <img width="24" height="24"  class="rounded-[20px] w-full"
+                src="samuraiNEW.svg"
                 alt="Picture of Samurai"
               />
-              <p class="font-DM font-bold text-white text-2xl pt-6 pb-1">
+            </picture>
+              <p class="font-DM font-bold text-white text-2xl pt-6 sm:pt-[13px] pb-1">
                 Anime
               </p>
               <p class="font-DM font-medium pb-14 text-gray-400 text-base">
@@ -599,46 +300,34 @@
                 role in my life. I always loved watching anime especially series
                 that involve Samurai sword fights.
               </p>
-            </div>
+            </article>
           </div>
         </div>
       </section>
-      LETS ORK TOGETHER
-      <section>
-        <div class="sm:py-[120px] py-14">
-          <div class="flex flex-col items-center justify-center">
+       <section class="mx-auto max-w-raju flex flex-col items-center sm:py-[120px] py-14">
             <p
-              class="text-white font-DM font-bold text-4xl sm:text-[40px] pb-4"
+              class="text-white font-DM font-bold text-4xl sm:text-[40px] pb-4 text-center"
             >
               Let's work together
             </p>
             <p
-              class="font-DM font font-medium text-gray-400 text-lg sm:text-2xl"
+              class="font-DM font font-medium text-gray-400 text-lg sm:text-2xl text-center"
             >
-              I’m open for new opportunities.
+              I'm open for new opportunities.
             </p>
             <p
-              class="pb-10 font-DM font font-medium text-gray-400 text-lg sm:text-2xl"
+              class="pb-10 font-DM font font-medium text-gray-400 text-lg sm:text-2xl text-center"
             >
               If you have one for me we should talk!
             </p>
-
-            <button
-              class="hover:bg-red-300 transition-colors duration-300 gap-3 font-DM font-bold text-base text-black flex items-center justify-center rounded-[20px] px-8 py-[14px] bg-rajuRed"
-              href="sdsd"
-            >
-              <img src="mailIcon.svg" alt=" mail icon" /><a
-                id="contact"
-                href="mailto:gtrwojciechmajewski@gmail.com?subject=hej Wojtek"
-                >gtrwojciechmajewski@gmail.com</a
-              >
-            </button>
+            <a class="bg-rajuRed transition-colors hover:bg-rajuRed-500 duration-500 text-black font-bold text-xl leading-9 flex gap-3 flex-wrap justify-center rounded-[20px] text-center py-3.5 px-8" href="mailto:gtrwojciechmajewski@gmail.com"><img src="mailIcon.svg" alt="a mail icon" width="24" height="24">gtrwojciechmajewski@gmail.com</a>
+          
             <p
-              class="sm:pt-20 pt-10 font-DM font-medium text-gray-400 text-2xl pb-6"
+              class="sm:pt-20 pt-10 font-DM font-medium text-gray-400 text-2xl pb-6 text-center"
             >
               or find me on
             </p>
-            <div class="sm:flex gap-4 grid grid-cols-4">
+            <div class="sm:flex sm:justify-center gap-4 grid grid-cols-4">
               <a href="#"
                 ><img
                   class="hover:bg-slate-600 transition-colors duration-300 iconBackground p-4"
@@ -686,9 +375,9 @@
                 alt="instagram icon small bottom of the page"
               />
             </div>
-          </div>
-        </div>
-      </section>
-    </main>
+      </section> 
+    </div>
+    </main> 
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
