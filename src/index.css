@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 * {
   scroll-margin-top: 6.25rem;
